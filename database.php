@@ -16,8 +16,9 @@ $datab = 'countries';
 $db = new PDO('mysql:host='.DB_SERVER, DB_USER, DB_PASSWORD);
 	$db->exec("CREATE DATABASE `$datab`");
 
-$db = new PDO('mysql:host='.DB_SERVER.';dbname='.DB_DATABASE, DB_USER, DB_PASSWORD);		$sql = file_get_contents('install.sql');
-	$db->exec($sql);
+$db = new PDO('mysql:host='.DB_SERVER.';dbname='.DB_DATABASE, DB_USER, DB_PASSWORD);		
+	 $sql = file_get_contents('install.sql');
+	 $db->exec($sql);
 
 try{
 	$db = new PDO('mysql:host='.DB_SERVER.';dbname='.DB_DATABASE, DB_USER, DB_PASSWORD);
