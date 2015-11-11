@@ -2,6 +2,6 @@
 // Database constans
 define('DB_SERVER', "localhost");
 define('DB_USER', "root");
-define('DB_PASSWORD', "123");
+define('DB_PASSWORD', "");
 define('DB_DATABASE', "countries");
 ?>
